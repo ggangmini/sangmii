@@ -14,6 +14,8 @@ public class ScannerEx2 {
 // b=sc.netxint() ;
      int a = sc.nextInt();
      int b = sc.nextInt();
+
+     // 출력, a+b 부분을 괄호로 감싸서 먼저 연산되도록 함 
      System.out.println(a + "+" +  b + "은" + (a + b));
 
      sc.close();
