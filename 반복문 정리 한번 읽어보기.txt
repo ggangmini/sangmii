@@ -1,0 +1,47 @@
+switch문
+
+switch(값){
+case (값);
+System.out.println(출력 결과);
+break;
+
+이 구문이 반복되고 switch값에 맞는 case값이 나오면 그 case문의 출력결과를 나타내줌
+
+if문과는 다르게 조건식이 아닌 값을 입력
+ex) int num = (int)(Math.random()*6) + 1
+switch (num) => 조건식 대신 값을 입력함
+ <switch 문은 조건의 범위 설정이 불가능함, 주로 지정된 값을 비교시에 사용>
+
+
+FOR문
+ 반복실해할 횟수가 정해져 있을 경우 주로 사용
+ 구성 : 초기화변수, 조건식 , 증감식, 반복 소스로 구성
+ * 초기화 변수는 FOR문 내에서 사용되고 첫번째 반복문에서만 사용. 그리고 FOR문 밖에서는 삭제됨
+ * for (int i=1; i<=10; i++) = i= 1이란 변수로 초기화가 되었고 1부터 10까지 진행되며 1씩 커진다.
+ *System.out.println("나무꾼이 나무를"+i+"번 찍습니다"); 
+ = 위 for문으로 반복문이 진행되어 나무를 i=1 ~ i=10까지 찍는다는 말
+
+ex) int total = 0; =총합을 저장할 변수 선언 
+for (int i=1; i<11; i++ ){ =i는 1로 초기화 변수 선언 , 1부터 10까지 , i는 증감식
+total = total + i ; 
+System.out.println("i :"+i+",total :"+ total)} =for문 안에서 사용하는 출력이므로 1~10까지의 결과물이 나옴
+System.out.println("1~10까지의 총합은"+ total+"입니다"); 최종결과물 출력
+
+String input: 글자열로 변수를 선언
+input = sc.nextLine( ) : 입력할 문자열을 인풋에 담는다.
+ln : enter 값
+do ~ while : while 문과 동일한 반복문이지 무조건 1번은 실행하는 반복문
+while (!input.equals("q")); = input의 결과값이 될 q가 아닌 값이 들어오면 그 실행문을 반복한다.
+
+
+While문
+ * 초기화 변수를 while문 외부에 선언하고 내부에서 사용
+ * 증감식이 반복선언 밖에 선언됨
+
+  while (count < 11) {
+            total = total + count; // total 은 0부터 시작하고 count= 1 부터 시작
+            System.out.println("count : " + count + ", total : " + total);
+            count++; //(count는 1씩 증가한다는 증감식
+        }
+        System.out.println("1~10까지의 총합은" + total + "입니다."); 
+= 마지막의 토탈값은 총 11번 출력된 값이다.
